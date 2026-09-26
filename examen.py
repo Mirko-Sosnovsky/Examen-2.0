@@ -13,6 +13,7 @@
 # ETAPA 1 - INICIO
 # =========================
 
+print("TERMINAL DE EXPLORACIÓN ESPACIAL  Nº5")
 nopi = input("Ingrese su nombre ")
 codi = 100
 destinos = ["Luna", "Marte", "Saturno"]
@@ -34,7 +35,7 @@ while ds != fe:
         print(f"Destino seleccionado: {ds}")
         print(f"Conbistible necesario: ", costo[0])
         cs = codi-20
-        print("Conbustible sobrante = {cs}")
+        print(f"Conbustible sobrante = {cs}")
         codi = cs
         if cs < 0:
             print("Combustible insuficiente, vuelva a empezar o elija otra ruta")
@@ -70,10 +71,22 @@ while ds != fe:
         print(f"Viajes realizados a saturno: {viasa}")
         print(f"Cantidad de viajes realizados a Marte: {viama}")
         print(f"Cantidad de viajes realizados a la Luna: {vialu}")
-        for destino in destino:
-            print(destino)
+        for costos in range (1, 2):
+            print("saturno - ", costos+49)
+            print("Luna - ", costos+19)
+            print("Marte - ", costos+34)
     elif ds == fe:
         print("Último resumen: ")
+        print(f"Nombre del piloto: {nopi}")
+        print(f"Combustible restante: {codi}")
+        print(f"Viajes realizados: {via}")
+        print(f"Viajes realizados a saturno: {viasa}")
+        print(f"Cantidad de viajes realizados a Marte: {viama}")
+        print(f"Cantidad de viajes realizados a la Luna: {vialu}")
+        for costos in range (1, 2):
+            print("saturno - ", costos+49)
+            print("Luna - ", costos+19)
+            print("Marte - ", costos+34)
 
         print(f"{nopi}, Gracias por viajar abordo de <<Nave en Sib, 0645>>, ¡Vuelva pronto!")
     else:
