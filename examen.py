@@ -12,12 +12,13 @@
 # =========================
 # ETAPA 1 - INICIO
 # =========================
+
 nopi = input("Ingrese su nombre ")
 codi = 100
 destinos = ["Luna", "Marte", "Saturno"]
 costo = ["20", "35", "50"]
-fe = ("Finalizar-expedición")
-print(f"¡Hola {nopi}, bienvenido!")
+fe = ("fe")
+print(f"¡Hola {nopi}, bienvenido!, Para finalizal la expedición ingrese <<fe>> y para consultar el estado de la nave <<CES>>")
 print(f"Conbustible disponible = {100} unidades")
 ds = ("Sib")
 via = int(0)
@@ -62,9 +63,23 @@ while ds != fe:
         else:
             print("Viaje exitoso")
             viasa = viasa+1
-    else:
-        print("No se reconoció el destino, chequeá de que esté bien escrito y que la primer letra sea una mayçuscula")
+    elif ds == "CES":
+        print(f"Nombre del piloto: {nopi}")
+        print(f"Combustible restante: {codi}")
+        print(f"Viajes realizados: {via}")
+        print(f"Viajes realizados a saturno: {viasa}")
+        print(f"Cantidad de viajes realizados a Marte: {viama}")
+        print(f"Cantidad de viajes realizados a la Luna: {vialu}")
+        for destino in destino:
+            print(destino)
+    elif ds == fe:
+        print("Último resumen: ")
 
+        print(f"{nopi}, Gracias por viajar abordo de <<Nave en Sib, 0645>>, ¡Vuelva pronto!")
+    else:
+        print("No se reconoció el destino, chequeá de que esté bien escrito y que la primer letra sea una mayúscula")
+
+# ¡¡ACORDATE QUE CAMVIASTE "5" POR "fe"!!
 
 # Crear las variables necesarias.
 # Crear las listas de destinos y costos.
