@@ -38,6 +38,7 @@ while ds != "fe":
         print("saturno - ", costos+49)
         print("Luna - ", costos+19)
         print("Marte - ", costos+34)
+        print(f"Venus - ", costos+29)
     print(f"Cantidad de viajes realizados = {via}")
     print(f"Cantidad de viajes realizados a saturno = {viasa}")
     print(f"Cantidad de viajes realizados a marte = {viama}")
@@ -106,12 +107,38 @@ while ds != "fe":
                 are = are-12
                 pl = pl+780
                 comi = comi-80
+                print("¡Bienvenido a Venus!, el segundo planeta del sistema solar, también conocido como el planeta rojo. Venus se encuentra a aproximada mente 108 millones de kilómetros del sol, y en su punto más cercano a 40 millones de kilómetros de la tierra.")
+                if viave == 1:
+                    print("Venu está cubierto por una espesa y cerrada capa de nubes compuestas de gotas de ácido letales, que reflejan al sol. Con un grosor de 25 KM, las nubes impiden que gran parte de la luz del sol no alcanza la superficie, pero sí que llega otro tipo de radiación llamada infrarroja, que queda atrapada por la densa atmósfera.")
+                elif viave == 2:
+                    print("Venus está cubierto por una atmósfera densa de  dióx dióxido de carbono, y sus nubes son de ácido sulfúico. Ambos forman el llamado efecto invernadero: atrapan el calor y calientan el planeta. Venus puede alcanzar temperatura insoportables, la máxima es de  453 ℃ y la mínima es de menos 45 °C.")
+                elif viave == 3:
+                    print("Se han registrado unos 1600 grandes volcanes en Venus, a los que se suman centenares de miles de volcanes menores. Hace años que los astrónomos vienen debatiendo si alguno de estos volcanes puede estar activo en la actualidad")
+                elif viave == 4:
+                    print("  El hierro que hay en sus rocas y el polvo se vuelven óxido de hierro. Es por esto que el planeta se ve rojo a simple vista cuando lo vemos en el cielo.")
+                elif viave == 5:
+                    print("Tamaño: Es muy similar a la Tierra, con un diámetro de 12.104 kilómetros (la Tierra tiene 12.756 km). Rotación: Gira en dirección contraria a la mayoría de los planetas y lo hace muy lento. Un día en Venus (243 días terrestres) dura más que su año (225 días terrestres)")
+                else:
+                    print(" ")
         else:
             print("Viaje exitoso")
             viama = viama+1
             are = are-10
             pl = pl+900
             comi = comi-60
+            print("¡Bienvenido a Venus!, el segundo planeta del sistema solar, también conocido como el planeta rojo. Venus se encuentra a aproximada mente 108 millones de kilómetros del sol, y en su punto más cercano a 40 millones de kilómetros de la tierra.")
+            if viave == 1:
+                print("Venu está cubierto por una espesa y cerrada capa de nubes compuestas de gotas de ácido letales, que reflejan al sol. Con un grosor de 25 KM, las nubes impiden que gran parte de la luz del sol no alcanza la superficie, pero sí que llega otro tipo de radiación llamada infrarroja, que queda atrapada por la densa atmósfera.")
+            elif viave == 2:
+                print("Venus está cubierto por una atmósfera densa de  dióx dióxido de carbono, y sus nubes son de ácido sulfúico. Ambos forman el llamado efecto invernadero: atrapan el calor y calientan el planeta. Venus puede alcanzar temperatura insoportables, la máxima es de  453 ℃ y la mínima es de menos 45 °C.")
+            elif viave == 3:
+                print("Se han registrado unos 1600 grandes volcanes en Venus, a los que se suman centenares de miles de volcanes menores. Hace años que los astrónomos vienen debatiendo si alguno de estos volcanes puede estar activo en la actualidad")
+            elif viave == 4:
+                print("  El hierro que hay en sus rocas y el polvo se vuelven óxido de hierro. Es por esto que el planeta se ve rojo a simple vista cuando lo vemos en el cielo.")
+            elif viave == 5:
+                print("Tamaño: Es muy similar a la Tierra, con un diámetro de 12.104 kilómetros (la Tierra tiene 12.756 km). Rotación: Gira en dirección contraria a la mayoría de los planetas y lo hace muy lento. Un día en Venus (243 días terrestres) dura más que su año (225 días terrestres)")
+            else:
+                    print(" ")
     elif ds == "Marte":
         print(f"Destino seleccionado: {ds}")
         print(f"Combustible necesario: ", costo [1])
@@ -243,7 +270,7 @@ while ds != "fe":
                     mej = int(input(f"Tenés {are} puntos de arreglo, cada uno sale 2 pesos, ¿Cuánta plata querés invertir? "))
                     while mej > pl:
                         print(f"No hay {mej} pesos para invertir, tenés {pl} pesos.")
-                        mej == int(input(f"Tenés {are} puntos de arreglo, cada uno sale 2 pesos, ¿Cuánta plata querés invertir? "))
+                        mej = int(input(f"Tenés {are} puntos de arreglo, cada uno sale 2 pesos, ¿Cuánta plata querés invertir? "))
 
                     pl = pl-mej
                     mejo = mej/2
